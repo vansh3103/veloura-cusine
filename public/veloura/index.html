@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Veloura — Luxury Fine Dining Restaurant</title>
+<meta name="description" content="Veloura is an award-winning luxury fine dining restaurant. Farm-to-table cuisine, premium ambience, and unforgettable evenings crafted by our Michelin-trained chefs." />
+<meta name="keywords" content="fine dining, luxury restaurant, Michelin, chef's table, wine, reservations" />
+<meta name="author" content="Veloura Restaurant" />
+<meta property="og:title" content="Veloura — Where Every Meal Becomes a Memory" />
+<meta property="og:description" content="Award-winning luxury fine dining with farm-to-table cuisine." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Style -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-logo">V E L O U R A</div>
+  <div class="loader-bar"></div>
+  <small style="color:#a29c8a;letter-spacing:4px;">FINE DINING · EST. 2010</small>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar-custom" id="navbar">
+  <div class="container navbar-inner">
+    <a class="brand" href="#home">Vel<span>oura</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#chefs">Chefs</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="fa-regular fa-moon"></i></button>
+      <button class="icon-btn" id="wishBtn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="icon-badge" id="wishCount">0</span></button>
+      <button class="icon-btn" id="cartBtn" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="icon-badge" id="cartCount">0</span></button>
+      <button class="icon-btn mobile-toggle" id="menuToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <i class="fa-solid fa-utensils floating f1"></i>
+  <i class="fa-solid fa-wine-glass floating f2"></i>
+  <i class="fa-solid fa-champagne-glasses floating f3"></i>
+  <i class="fa-solid fa-bowl-food floating f4"></i>
+
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-lg-8">
+        <span class="script" data-aos="fade-down">Welcome to Veloura</span>
+        <h1 data-aos="fade-up" data-aos-delay="200">
+          Where Every Meal <br/> Becomes A <span class="accent">Memory</span><span class="type-cursor"></span>
+        </h1>
+        <p class="hero-desc" data-aos="fade-up" data-aos-delay="400">
+          A modern sanctuary of flavor where seasonal farm-to-table ingredients, hand-selected wines, and refined technique meet the warmth of unforgettable hospitality.
+        </p>
+        <div class="hero-cta" data-aos="fade-up" data-aos-delay="600">
+          <a href="#menu" class="btn-luxury btn-gold">View Menu <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#reserve" class="btn-luxury btn-outline-gold">Reserve a Table</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" data-aos="fade-left" data-aos-delay="800">
+    <div class="stat"><div class="num">15+</div><div class="lbl">Years</div></div>
+    <div class="stat"><div class="num">42</div><div class="lbl">Awards</div></div>
+    <div class="stat"><div class="num">120+</div><div class="lbl">Dishes</div></div>
+  </div>
+
+  <a href="#about" class="scroll-indicator">
+    <div class="mouse"></div>
+    <span>SCROLL</span>
+  </a>
+</header>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="about-imgs">
+          <img class="img-1" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="Veloura dining hall">
+          <img class="img-2" src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Chef preparing dish">
+          <div class="about-badge">
+            <div class="yr">15+</div>
+            <div class="txt">Years of<br/>Excellence</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="section-title" style="text-align:left;margin-top:8px;">A Legacy of Flavor, Crafted with Passion</h2>
+        <p style="color:var(--muted);line-height:1.8;">
+          Since 2010, Veloura has stood as an ode to the art of fine dining — a place where every plate tells a story and every evening becomes a cherished memory. Founded by executive chef Adrien Laurent, our kitchen honors seasonal produce sourced from partner farms within 100 miles of our door.
+        </p>
+        <p style="color:var(--muted);line-height:1.8;">
+          Ours is a philosophy of restraint and generosity: fewer ingredients, treated with reverence, elevated with technique honed over decades in Paris, Kyoto, and New York.
+        </p>
+        <div class="pillars">
+          <div class="pillar"><i class="fa-solid fa-leaf"></i><h5>Farm to Table</h5><p>Fresh, seasonal, locally sourced produce.</p></div>
+          <div class="pillar"><i class="fa-solid fa-award"></i><h5>Award Winning</h5><p>42 international culinary distinctions.</p></div>
+          <div class="pillar"><i class="fa-solid fa-heart"></i><h5>Our Philosophy</h5><p>Restraint, precision, warmth, and joy.</p></div>
+          <div class="pillar"><i class="fa-solid fa-eye"></i><h5>Our Vision</h5><p>To be the most memorable table in the city.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-band">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-6"><div class="stat-item"><div class="icon"><i class="fa-solid fa-utensils"></i></div><div class="count" data-count="120">0</div><div class="lbl">Signature Dishes</div></div></div>
+      <div class="col-md-3 col-6"><div class="stat-item"><div class="icon"><i class="fa-solid fa-users"></i></div><div class="count" data-count="18500">0</div><div class="lbl">Happy Guests</div></div></div>
+      <div class="col-md-3 col-6"><div class="stat-item"><div class="icon"><i class="fa-solid fa-trophy"></i></div><div class="count" data-count="42">0</div><div class="lbl">Awards Won</div></div></div>
+      <div class="col-md-3 col-6"><div class="stat-item"><div class="icon"><i class="fa-solid fa-user-tie"></i></div><div class="count" data-count="24">0</div><div class="lbl">Expert Chefs</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section" id="menu">
+  <div class="container">
+    <div class="center" data-aos="fade-up">
+      <span class="eyebrow">Signature Menu</span>
+      <h2 class="section-title">A Culinary Voyage</h2>
+      <p class="section-subtitle">From delicate starters to indulgent desserts — each dish is composed with intention.</p>
+    </div>
+
+    <div class="menu-tools" data-aos="fade-up">
+      <div class="menu-search">
+        <i class="fa-solid fa-magnifying-glass text-gold"></i>
+        <input type="text" id="menuSearch" placeholder="Search dishes...">
+      </div>
+    </div>
+
+    <div class="menu-filter" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="starters">🍽 Starters</button>
+      <button class="filter-btn" data-filter="salads">🥗 Salads</button>
+      <button class="filter-btn" data-filter="pasta">🍝 Pasta</button>
+      <button class="filter-btn" data-filter="pizza">🍕 Pizza</button>
+      <button class="filter-btn" data-filter="main">🥩 Main Course</button>
+      <button class="filter-btn" data-filter="seafood">🍣 Seafood</button>
+      <button class="filter-btn" data-filter="chef">🥘 Chef Specials</button>
+      <button class="filter-btn" data-filter="desserts">🍰 Desserts</button>
+      <button class="filter-btn" data-filter="beverages">🍷 Beverages</button>
+    </div>
+
+    <div class="row g-4" id="menuGrid"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- CHEF RECOMMENDATIONS -->
+<section class="section" style="background:var(--charcoal-2);">
+  <div class="container">
+    <div class="center" data-aos="fade-up">
+      <span class="eyebrow">Chef's Picks</span>
+      <h2 class="section-title">Recommendations from Chef Adrien</h2>
+      <p class="section-subtitle">Three plates that define the soul of Veloura.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="rec-card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80" alt="Wagyu Symphony">
+          <div class="rec-overlay">
+            <span class="rec-tag">Chef's Choice</span>
+            <h3>Wagyu Symphony</h3>
+            <p>A5 wagyu, black truffle jus, charred alliums, smoked marrow crumble.</p>
+            <div class="rec-price">$128</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="rec-card">
+          <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80" alt="Ocean Whisper">
+          <div class="rec-overlay">
+            <span class="rec-tag">Signature</span>
+            <h3>Ocean Whisper</h3>
+            <p>Line-caught turbot, brown butter, caviar, sea-lettuce beurre blanc.</p>
+            <div class="rec-price">$94</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="rec-card">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80" alt="Garden Reverie">
+          <div class="rec-overlay">
+            <span class="rec-tag">Seasonal</span>
+            <h3>Garden Reverie</h3>
+            <p>Heirloom vegetables, ash-baked celeriac, hazelnut praline, herb oil.</p>
+            <div class="rec-price">$72</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHEFS -->
+<section class="section" id="chefs">
+  <div class="container">
+    <div class="center" data-aos="fade-up">
+      <span class="eyebrow">Meet the Team</span>
+      <h2 class="section-title">The Artisans Behind Every Plate</h2>
+      <p class="section-subtitle">A brigade of world-class talent devoted to the craft of hospitality.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up">
+        <div class="chef-card">
+          <div class="chef-photo"><img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=500&q=80" alt="Chef Adrien"></div>
+          <h4>Adrien Laurent</h4>
+          <div class="chef-role">Executive Chef</div>
+          <p class="chef-bio">Trained in Paris & Kyoto. 20 years crafting seasonal tasting menus that celebrate quiet perfection.</p>
+          <div class="chef-social"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="chef-card">
+          <div class="chef-photo"><img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=500&q=80" alt="Chef Isabella"></div>
+          <h4>Isabella Moreno</h4>
+          <div class="chef-role">Sous Chef</div>
+          <p class="chef-bio">Champion of coastal Mediterranean flavor. Precision-driven, poetry on the plate.</p>
+          <div class="chef-social"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="chef-card">
+          <div class="chef-photo"><img src="https://images.unsplash.com/photo-1595475207225-428b62bda831?w=500&q=80" alt="Chef Kenji"></div>
+          <h4>Kenji Tanaka</h4>
+          <div class="chef-role">Pastry Chef</div>
+          <p class="chef-bio">Sculptor of sweet things. Former head pastry chef at Tokyo's celebrated Maison Bleue.</p>
+          <div class="chef-social"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="chef-card">
+          <div class="chef-photo"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80" alt="Marcus"></div>
+          <h4>Marcus Whitfield</h4>
+          <div class="chef-role">Restaurant Manager</div>
+          <p class="chef-bio">Curator of experience. A master sommelier with a warm, effortlessly attentive presence.</p>
+          <div class="chef-social"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery" style="background:var(--charcoal-2);">
+  <div class="container">
+    <div class="center" data-aos="fade-up">
+      <span class="eyebrow">Gallery</span>
+      <h2 class="section-title">Moments at Veloura</h2>
+      <p class="section-subtitle">Step inside our world of warmth, craft, and quiet luxury.</p>
+    </div>
+    <div class="gallery-grid" data-aos="fade-up">
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80" alt="Dining"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Interior"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800&q=80" alt="Food"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800&q=80" alt="Plate"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80" alt="Cocktail"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&q=80" alt="Cocktails"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80" alt="Kitchen"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80" alt="Ambience"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80" alt="Seafood"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1519690889869-e705e59f72e1?w=800&q=80" alt="Outdoor"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80" alt="Vegetables"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=800&q=80" alt="Dessert"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&q=80" alt="Live cooking"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1470549638415-0a0755be0619?w=800&q=80" alt="Wine"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Dining Hall"></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&q=80" alt="Chef Plating"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="center" data-aos="fade-up">
+      <span class="eyebrow">Testimonials</span>
+      <h2 class="section-title">Kind Words From Our Guests</h2>
+      <p class="section-subtitle">There is no greater honor than the trust of those who dine with us.</p>
+    </div>
+    <div class="testi-track" id="testiTrack" data-aos="fade-up"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="section reservation" id="reserve">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="reserve-card" data-aos="zoom-in">
+          <div class="center mb-4">
+            <span class="eyebrow">Reservations</span>
+            <h2 class="section-title" style="margin-bottom:8px;">Reserve Your Table</h2>
+            <p style="color:var(--muted);">We reserve tables up to 60 days in advance. Please arrive 10 minutes before your booking.</p>
+          </div>
+          <form id="reserveForm" class="row g-3">
+            <div class="col-md-6"><label class="form-label">Full Name</label><input class="form-control-lux" type="text" required placeholder="Alexander Bell"></div>
+            <div class="col-md-6"><label class="form-label">Email Address</label><input class="form-control-lux" type="email" required placeholder="alex@example.com"></div>
+            <div class="col-md-6"><label class="form-label">Phone Number</label><input class="form-control-lux" type="tel" required placeholder="+1 (555) 000-0000"></div>
+            <div class="col-md-6"><label class="form-label">Guests</label>
+              <select class="form-select-lux" required>
+                <option>2 People</option><option>3 People</option><option>4 People</option>
+                <option>5 People</option><option>6 People</option><option>8 People</option><option>10+ People</option>
+              </select>
+            </div>
+            <div class="col-md-4"><label class="form-label">Date</label><input class="form-control-lux" type="date" required></div>
+            <div class="col-md-4"><label class="form-label">Time</label>
+              <select class="form-select-lux" required>
+                <option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option>
+                <option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option><option>9:00 PM</option>
+              </select>
+            </div>
+            <div class="col-md-4"><label class="form-label">Occasion</label>
+              <select class="form-select-lux">
+                <option>Casual Dinner</option><option>Anniversary</option>
+                <option>Birthday</option><option>Business Meeting</option><option>Proposal</option>
+              </select>
+            </div>
+            <div class="col-md-6"><label class="form-label">Seating Preference</label>
+              <select class="form-select-lux">
+                <option>Main Dining Room</option><option>Window Seat</option>
+                <option>Private Booth</option><option>Terrace</option><option>Chef's Table</option>
+              </select>
+            </div>
+            <div class="col-md-6"><label class="form-label">Special Requests</label>
+              <input class="form-control-lux" type="text" placeholder="Allergies, dietary preferences...">
+            </div>
+            <div class="col-12 center mt-3">
+              <button type="submit" class="btn-luxury btn-gold">Confirm Reservation <i class="fa-solid fa-check"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="center" data-aos="fade-up">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2 class="section-title">The Veloura Difference</h2>
+      <p class="section-subtitle">Little details that transform a meal into an evening you'll remember.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up"><div class="feature-card"><div class="feature-icon"><i class="fa-solid fa-leaf"></i></div><h5>Fresh Ingredients</h5><p>Sourced daily from local partner farms and artisan producers.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="feature-card"><div class="feature-icon"><i class="fa-solid fa-award"></i></div><h5>Award Winning Chefs</h5><p>A brigade of internationally recognized culinary talent.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="feature-card"><div class="feature-icon"><i class="fa-solid fa-champagne-glasses"></i></div><h5>Premium Ambience</h5><p>Warm lighting, curated music, hand-selected fine linens.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="240"><div class="feature-card"><div class="feature-icon"><i class="fa-solid fa-music"></i></div><h5>Live Music</h5><p>Nightly acoustic jazz and Friday piano evenings.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up"><div class="feature-card"><div class="feature-icon"><i class="fa-solid fa-door-closed"></i></div><h5>Private Dining</h5><p>Two intimate suites for celebrations up to 20 guests.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="feature-card"><div class="feature-icon"><i class="fa-solid fa-bolt"></i></div><h5>Fast Service</h5><p>Attentive brigade of servers with impeccable timing.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="feature-card"><div class="feature-icon"><i class="fa-solid fa-wifi"></i></div><h5>Free WiFi</h5><p>Fast complimentary WiFi for our guests and events.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="240"><div class="feature-card"><div class="feature-icon"><i class="fa-solid fa-umbrella-beach"></i></div><h5>Outdoor Seating</h5><p>Garden terrace overlooking the moonlit courtyard.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section" id="events" style="background:var(--charcoal-2);">
+  <div class="container">
+    <div class="center" data-aos="fade-up">
+      <span class="eyebrow">Events & Offers</span>
+      <h2 class="section-title">Upcoming at Veloura</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6" data-aos="fade-up"><div class="event-card"><div class="event-date"><div class="d">14</div><div class="m">JUL</div></div><div class="event-info"><h5>Wine Night: Burgundy Selection</h5><p>Six bespoke pairings guided by our sommelier Marcus.</p><span class="meta"><i class="fa-solid fa-clock"></i> 7:00 PM · $95 per guest</span></div></div></div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80"><div class="event-card"><div class="event-date"><div class="d">19</div><div class="m">JUL</div></div><div class="event-info"><h5>Live Music: Jazz Ensemble</h5><p>Enjoy an intimate evening with the Aurora Jazz Quartet.</p><span class="meta"><i class="fa-solid fa-clock"></i> 8:00 PM · Complimentary</span></div></div></div>
+      <div class="col-lg-6" data-aos="fade-up"><div class="event-card"><div class="event-date"><div class="d">21</div><div class="m">JUL</div></div><div class="event-info"><h5>Family Sunday Dinner</h5><p>A three-course tasting menu designed for shared moments.</p><span class="meta"><i class="fa-solid fa-clock"></i> 5:00 PM · $65 per guest</span></div></div></div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80"><div class="event-card"><div class="event-date"><div class="d">27</div><div class="m">JUL</div></div><div class="event-info"><h5>Weekend Grand Buffet</h5><p>Over 40 signature dishes from every corner of the world.</p><span class="meta"><i class="fa-solid fa-clock"></i> 12:00 PM · $78 per guest</span></div></div></div>
+      <div class="col-lg-6" data-aos="fade-up"><div class="event-card"><div class="event-date"><div class="d">02</div><div class="m">AUG</div></div><div class="event-info"><h5>Chef's Table Experience</h5><p>Eight seats. Nine courses. An unforgettable evening beside Chef Adrien.</p><span class="meta"><i class="fa-solid fa-clock"></i> 6:30 PM · $220 per guest</span></div></div></div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80"><div class="event-card"><div class="event-date"><div class="d">10</div><div class="m">AUG</div></div><div class="event-info"><h5>Summer Rooftop Soirée</h5><p>Cocktails, canapés, and live acoustic under the stars.</p><span class="meta"><i class="fa-solid fa-clock"></i> 9:00 PM · $60 per guest</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5" data-aos="fade-right">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title" style="text-align:left;">Frequently Asked Questions</h2>
+        <p style="color:var(--muted);">Everything you need to know before your visit — from dress code to dietary requests.</p>
+        <img style="border-radius:var(--radius);margin-top:20px;" src="https://images.unsplash.com/photo-1592861956120-e524fc739696?w=700&q=80" alt="Ambience">
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="faq-item"><div class="faq-q">Do I need to book in advance? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>Yes, reservations are highly recommended. We open bookings up to 60 days ahead.</p></div></div>
+        <div class="faq-item"><div class="faq-q">Is there a dress code? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>Smart elegant. Jackets are recommended for gentlemen; sneakers and athletic wear are not permitted.</p></div></div>
+        <div class="faq-item"><div class="faq-q">Do you accommodate dietary restrictions? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>Absolutely. Please note allergies during booking — our chefs craft custom vegan, gluten-free and kosher menus.</p></div></div>
+        <div class="faq-item"><div class="faq-q">Do you offer private dining? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>Yes. Our two private suites host 8–20 guests with dedicated servers and custom menus.</p></div></div>
+        <div class="faq-item"><div class="faq-q">Is parking available? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>Complimentary valet parking is provided every evening from 5:30 PM.</p></div></div>
+        <div class="faq-item"><div class="faq-q">Are children welcome? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>Guests over the age of 8 are welcome in the main dining room; families are ideal for our Sunday service.</p></div></div>
+        <div class="faq-item"><div class="faq-q">What forms of payment do you accept? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>All major credit cards, contactless payment, and digital wallets. Cash is accepted for gratuities.</p></div></div>
+        <div class="faq-item"><div class="faq-q">Do you have a cancellation policy? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>Cancellations require 24 hours' notice. Chef's Table reservations require 72 hours.</p></div></div>
+        <div class="faq-item"><div class="faq-q">Can I purchase a gift card? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>Yes — physical and digital gift cards are available in any denomination from $50.</p></div></div>
+        <div class="faq-item"><div class="faq-q">Do you host weddings and events? <i class="fa-solid fa-plus"></i></div><div class="faq-a"><p>We host intimate weddings, launch dinners and corporate events. Please contact our events team.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" style="background:var(--charcoal-2);">
+  <div class="container">
+    <div class="center" data-aos="fade-up">
+      <span class="eyebrow">Get in Touch</span>
+      <h2 class="section-title">Visit Veloura</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="contact-info">
+          <div class="contact-item"><div class="ic"><i class="fa-solid fa-location-dot"></i></div><div><h6>Address</h6><p>128 Rue de Lumière, Old Quarter District, New York, NY 10012</p></div></div>
+          <div class="contact-item"><div class="ic"><i class="fa-solid fa-phone"></i></div><div><h6>Phone</h6><p>+1 (212) 555-0184</p></div></div>
+          <div class="contact-item"><div class="ic"><i class="fa-solid fa-envelope"></i></div><div><h6>Email</h6><p>reservations@veloura.dining</p></div></div>
+          <div class="contact-item"><div class="ic"><i class="fa-solid fa-clock"></i></div><div><h6>Opening Hours</h6><p>Tue – Sun · 6:00 PM – 11:00 PM<br/>Closed Mondays</p></div></div>
+          <div class="contact-item"><div class="ic"><i class="fa-solid fa-square-parking"></i></div><div><h6>Parking</h6><p>Complimentary valet from 5:30 PM nightly.</p></div></div>
+          <div class="contact-item"><div class="ic"><i class="fa-solid fa-share-nodes"></i></div><div><h6>Follow Us</h6>
+            <div class="socials" style="margin-top:8px;">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="map-wrap">
+          <iframe title="Veloura location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.256793297905!2d-74.00601528459394!3d40.71277597932886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22b3f5e997%3A0xfb54fef5b48c96b6!2sNew%20York%20City%20Hall!5e0!3m2!1sen!2sus!4v1685000000000!5m2!1sen!2sus" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="brand" style="font-size:2rem;">Vel<span>oura</span></div>
+        <p style="color:var(--muted);margin-top:16px;">An award-winning luxury fine dining experience serving refined seasonal cuisine and hand-crafted cocktails in the heart of the city.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5>Quick Links</h5>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a>
+        <a href="#reserve">Reserve</a><a href="#events">Events</a><a href="#contact">Contact</a>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Opening Hours</h5>
+        <p style="color:var(--muted);margin:4px 0;">Monday · Closed</p>
+        <p style="color:var(--muted);margin:4px 0;">Tue – Thu · 6:00 PM – 11:00 PM</p>
+        <p style="color:var(--muted);margin:4px 0;">Fri – Sat · 6:00 PM – 12:00 AM</p>
+        <p style="color:var(--muted);margin:4px 0;">Sunday · 5:00 PM – 10:00 PM</p>
+        <h5 style="margin-top:24px;">Newsletter</h5>
+        <form class="newsletter" onsubmit="event.preventDefault(); showToast('Subscribed to Veloura news', 'fa-envelope-open-text');">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Instagram Feed</h5>
+        <div class="insta-grid">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=200&q=70" alt="">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&q=70" alt="">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=200&q=70" alt="">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=200&q=70" alt="">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=200&q=70" alt="">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=200&q=70" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="copybar">
+      © 2026 Veloura Restaurant. All Rights Reserved · <a href="#" style="display:inline;padding:0;">Privacy Policy</a> · <a href="#" style="display:inline;padding:0;">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WISHLIST PANEL -->
+<div class="side-panel" id="wishPanel">
+  <div class="side-head"><h4><i class="fa-regular fa-heart text-gold"></i> Your Wishlist</h4><button class="icon-btn" onclick="closePanels()"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="side-body" id="wishBody"><p style="color:var(--muted);text-align:center;padding:40px 0;">Your wishlist is empty.</p></div>
+</div>
+
+<!-- CART PANEL -->
+<div class="side-panel" id="cartPanel">
+  <div class="side-head"><h4><i class="fa-solid fa-bag-shopping text-gold"></i> Your Cart</h4><button class="icon-btn" onclick="closePanels()"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="side-body" id="cartBody"><p style="color:var(--muted);text-align:center;padding:40px 0;">Your cart is empty.</p></div>
+  <div class="side-foot">
+    <div class="total"><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div>
+    <button class="btn-luxury btn-gold" style="width:100%;justify-content:center;" onclick="checkout()">Checkout</button>
+  </div>
+</div>
+
+<div class="overlay-bg" id="overlayBg" onclick="closePanels()"></div>
+
+<!-- SCROLL TOP -->
+<button id="scrollTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- TOAST -->
+<div id="toastWrap"></div>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
